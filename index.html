@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" width="width=device-width, initial-scale=1">
+	<title>Custom Encryptor</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<!-- HEADER -->
+
+		<div class="row">
+			<header>
+				<div class="jumbotron">
+					<h1>Create complex and safety passwords easily!</h1>
+					<h3>Just paste your favourite snippet and choose difficulty</h3>
+				</div>
+			</header>
+		</div>
+
+		<!-- MAIN CONTENT -->
+
+		<div class="row">
+		
+			<form action="" class="form-horizontal col-sm-12" name="encryptform">
+				<fieldset class="clearfix">
+					<legend>Custom Encryptor</legend>
+					
+					<section class="input-area form-group col-sm-8 col-xs-12">
+
+						<label for="your_snippet">
+							<span class="directive">First:</span> put here any text snippet you like. (E.g. your name, nick, some date, etc.)
+							<textarea name="your_snippet" class="form-control col-sm-12" id="your_snippet" rows="8"></textarea>
+						</label>	
+			
+					</section>
+					
+					<aside class="settings col-sm-4 col-xs-12">
+	 
+						<div class="comlexity form=group">
+							<label for="complexity">
+								<span class="directive">Second:</span>Choose complexity of a password you want to combine and push <em>"Encrypt!"</em>
+								<input class="form-contol" type="range" id="complexity" list="options" min="2" max="36" step="1" value="16" name="complexity">
+								You choose <span class="show-complexity">16</span> of 36
+							</label>
+						</div>
+						
+						<button name="go_button" id="go_button" class="go-button btn btn-success btn-lg" type="button" id="go">Encrypt!</button>
+
+					</aside>
+
+					<footer style="clear: both;">
+
+						<div class="form-group clearfix">
+							<label for="result">
+								<span class="directive">Finally:</span> copy your new password
+								<output name="result" class="output well" id="result" name="output"></output>
+							</label>
+						</div>
+
+					</footer>
+					
+				</fieldset>
+			</form>
+
+		</div>
+
+	</div>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>

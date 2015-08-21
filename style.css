@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header, legend {
+	text-align: center;
+}
+textarea, input[type="text"], output {
+	margin-top: 15px;
+}
+label {
+	width: 90%;
+}
+.directive {
+	display: block;
+	font-family: Tahoma, serif;
+	font-size: 1.7em;
+	color: #870087;
+}
+.comlexity [type="text"] {
+	padding: 8px 12px;
+}
+.show-complexity {
+	margin-top: 10px;
+	display: inline-block;
+	color: #67ac01;
+	font-size: 1.1em;
+}
+.go-button {
+	margin-top: 20px;
+}
+.output {
+	overflow: auto;
+}
